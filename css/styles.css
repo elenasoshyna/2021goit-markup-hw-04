@@ -1,0 +1,436 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --background-color: #ffffff;
+    --accent-color: #2196f3;
+    --card-border-line: #eeeeee;
+  }
+  body {
+    color: var(--primary-text-color);
+      background-color: #fff;
+      color: #757575;
+      font-family: roboto, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px;
+  }
+  
+  .container {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+      
+  }
+   
+  /* site-nav */
+  .page-header {
+    border-bottom: solid 1px rgba(236, 236, 236, 1) ;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .logo {
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  
+  .site-nav-list {
+    margin-left: 93px;
+    display: inline-flex;
+  }
+  .site-nav-list li:not(:last-child) {
+    margin-right: 45px;
+  }
+  
+  .site-nav-list .link-current {
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+  
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .link:hover,
+  .info:hover {
+    color: blue;
+  }
+  .site-nav-list .link {
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+  
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .site-nav-list .link:hover,
+  .site-nav-list .link:focus {
+    color: var(--accent-color);
+  }
+  .contacts-nav {
+    display: flex;
+    margin-left: 131px;
+  
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .mailto {
+    margin-left: 331px;
+  }
+  .contacts-nav li + li {
+    margin-left: 50px;
+  }  
+  .contacts-nav :focus,
+  .contacts-nav :hover {
+    color: var(--accent-color);
+  }
+  .link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  ul {
+    list-style: none;
+    padding: 0
+  }
+  
+  span {
+    color: var(--accent-color);
+  }
+  
+  /* Hero */
+  
+  .hero {
+    background-color: #2f303a;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  
+    text-transform: uppercase;
+    color: var(--background-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #2f303a;
+  }
+  
+  .hero-button {
+  
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin-top: 0px;
+    text-decoration: none;
+    border-color: transparent;
+  
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+   /* Наши преимущества */
+  .features {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 94px;
+  }
+   .list-style { 
+    display: flex;
+    justify-content: space-between;
+   }
+  .features-item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+  
+  .features .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px
+  }
+  
+  .features .text {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  
+  /* Чем мы занимаемся*/
+  
+  .title {
+    color: var(--title-text-color);
+    text-transform: uppercase;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: space-between
+  }
+  
+  .container.images {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .image:not(:last-child) {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+  
+  /* Наша команда */
+  
+  .our-team {
+    background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .team-box {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+  }
+  
+  .staff {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .name {
+    margin-bottom: 10px;
+  
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  
+  .profession {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  
+  /* Подвал страницы */
+  
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+  .footer-logo {
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer-contacts {
+    padding: 0px;
+    margin: 0;
+  }
+  .footer-address {
+    color: #ffffff;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  .footer-contacts-list {
+    padding-left: 0px;}
+
+  .footer-contacts-list .link:not(:last-child) {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    text-align: left;
+  }
+  .footer-contacts-list-link {
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 0;
+    padding-top: 9px;
+  }
+  .footer-contacts-list-link:hover,
+  .footer-contacts-list-link:focus {
+    color: var(--accent-color);
+  }
+  
+  /* portfolio */
+  .hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  } 
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .buttons li:not(:last-child) {
+    margin-right: 8px;
+  }
+  .button-list {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    text-align: center;
+  
+    color: var(--title-text-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .button-list:hover,
+  .button-list:focus {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;    
+  }
+
+  .projects-link {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+      }
+ img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }    
+  .card {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+      }
+  .examples-title {
+    font-family: Roboto;
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  
+  .examples-text {
+    font-family: Roboto;
+    color: var(--primary-text-color);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+  .description {
+    padding: 20px 24px;
+    border-left: 1px solid var(--card-border-line);
+    border-bottom: 1px solid var(--card-border-line);
+    border-right: 1px solid var(--card-border-line);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
